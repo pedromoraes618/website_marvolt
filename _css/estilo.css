@@ -1,0 +1,1107 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica neue", sans-serif;
+
+}
+
+:root {
+	--yellow: rgba(252, 172, 44);
+	;
+	--black: #373737;
+}
+
+/*celular*/
+@media screen and (max-width:1000px) {
+	.home-right img {
+		margin: 5% auto;
+		visibility: hidden;
+		height: 25px;
+
+	}
+
+	div#home {
+		height: "";
+	}
+
+	.home-left {
+
+		width: 100%;
+		margin: 30% 0% 5%;
+		text-align: center;
+		margin-left: -100px;
+		padding: 10%;
+
+	}
+
+	.home-left .img-logo {
+
+		margin-bottom: -10px;
+	}
+
+	.text-logo {}
+
+	.home-left h4 {}
+
+	.separator {
+		width: 100%;
+	}
+
+
+	.about-container {
+		display: block;
+	}
+
+	about-center {
+
+		padding-left: 0;
+
+	}
+
+	.about-right h2 {
+		text-align: center;
+
+	}
+
+	.about-right p {
+		text-align: center
+	}
+
+	div#sobre {
+		height: "";
+	}
+
+	#section-empresa {
+		height: "";
+	}
+
+
+	#section-setores {
+		height: "";
+	}
+
+	.contato-right {
+		margin-top: 10%;
+		margin-left: 25%;
+	}
+
+	#container-footer {
+		height: "";
+	}
+
+
+	#container-footer p {
+		text-align: center;
+	}
+
+
+	.about-section-title {
+		padding-bottom: 0px;
+	}
+
+	.about-section-title h2 {
+		font-size: 180%;
+	}
+
+	.about-section-subtitle p {
+		width: 85%;
+	}
+
+	.about-center p {
+		width: 87%;
+	}
+
+	.tab {}
+
+	#section-localizacao {
+		height: ""
+	}
+
+	.texto-central p {
+		font-size: 20px;
+
+	}
+
+	.text-logo {
+		margin-left: 20%;
+	}
+
+
+	.linha {
+
+		padding-left: 20%;
+	}
+
+	.cliente-section-title h2 {
+
+		font-size: 20px;
+
+	}
+
+	.contato-left img {
+		margin: 0 auto;
+	}
+
+	.vendas {
+		text-align: center;
+	}
+	.financeiro{
+		text-align: center;
+	}
+
+	.contato-email {
+		text-align: center;
+	}
+
+	.setores-container {
+
+	
+
+}
+	
+
+
+
+
+}
+
+/*desktop*/
+@media screen and (min-width:1000px) {
+	.home-right img {
+		margin: 40% auto;
+
+	}
+
+	div#home {
+		height: 100%;
+	}
+
+	.home-left {
+
+		width: 100%;
+		margin-top: 21%;
+		margin-bottom: 0%;
+		max-width: 50%;
+		padding-left: 5%;
+		margin-left: 3%;
+
+	}
+
+	.about-section-title h2 {
+		font-size: 180%;
+	}
+
+	.about-section-subtitle p {
+
+		font-size: 120%;
+	}
+
+
+
+	.separator {
+		width: 70%;
+	}
+
+	.about-container {
+		display: flex;
+	}
+
+
+
+	.contato-container {
+		display: flex;
+
+	}
+
+	#container-footer {
+		height: 50%;
+
+	}
+
+	.about-center p {
+
+		width: 50%;
+		font-size: 15px;
+		
+
+	}
+
+
+
+	.tab {}
+
+	#section-localizacao {
+		height: 405px;
+	}
+
+	.texto-central {
+		width: 400px;
+		margin: 0 auto;
+
+	}
+
+	.texto-central {
+		font-size: 18px;
+	}
+
+
+	.shadow {
+		position: absolute;
+		width: 100%;
+		height: 50px;
+		bottom: 0%;
+		left: 0;
+		z-index: 2;
+		background: linear-gradient(to top, #011d31, transparent);
+
+	}
+
+	.setores-container {
+		
+	}
+
+	div#home {
+
+		background-size: 100%;
+
+	}
+
+	.tabcontent p {
+		width: 60%;
+		font-size: 130%;
+
+	}
+	.setores-container {
+
+
+	padding: 100px;
+	padding-top: 0px;
+}
+
+
+
+
+
+}
+
+
+
+
+@keyframes moveToTop {
+	0% {
+		transform: translateY(100px);
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes moveToleft {
+	0% {
+		transform: translatex(100px);
+	}
+
+	100% {
+		transform: translatex(0);
+		opacity: 1;
+	}
+}
+
+
+
+
+
+div.container {
+	width: 100%;
+	height: 100%;
+
+}
+
+div#home {
+	background-position: bottom;
+	background-image: url(../img/plano1.jpg);
+	background-repeat: no-repeat;
+	justify-content: center;
+	padding: 0;
+
+}
+
+
+div#home {
+	-webkit-animation: kenburns-top 5s ease-out both;
+	        animation: kenburns-top 5s ease-out both;
+}
+
+#principal-nav {
+	border: 0px;
+	background: rgba(252, 172, 44, 1);
+    
+}
+
+.section-nav{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+#principal-nav li a {
+	color: black;
+	font-weight: bold;
+	transition: 0.2s ease-out;
+}
+#principal-nav li a:hover{
+	color:#fff;
+}
+.navbar-brand {
+	margin-top: -10PX;
+}
+
+#log_whats {
+	margin-top: 13px;
+	font-size: 25;
+	color: black;
+}
+
+
+.img-logo {
+	margin-top: -15%;
+
+}
+
+.text-logo {
+
+	width: 70%;
+
+}
+
+.home-left {
+	position: relative;
+	display: block;
+	animation: moveToTop 0.7s 1s forwards;
+	opacity: 0;
+
+
+
+}
+
+
+
+.home-left h4 {
+	color: #373737;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700px;
+
+}
+
+
+
+.separator {
+	border: 0.1px solid white;
+	margin-bottom: 5px;
+}
+
+.home-linguagem i {
+	color: #e5e5e5;
+	font-size: 25;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.icone {
+	margin-bottom: 25px;
+
+}
+
+
+
+
+/*2 section*/
+div#sobre {
+	background-color: white;
+	padding: 150px 0px;
+
+}
+
+.section-sobre{
+	max-width: 1300px;
+	
+	margin: 0 auto;
+}
+.about-section-title {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	animation: moveToleft 0.7s 1s forwards;
+	opacity: 0;
+
+}
+
+.about-section-title h2 {
+	color: black;
+	display: block;
+	color: #545454;
+}
+
+.about-section-subtitle {
+	padding-bottom: 10px;
+}
+
+.about-section-subtitle p {
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	color: #545454;
+}
+
+.about-section-subtitle .border {
+	border-bottom: 0.05em solid #e2e2e2;
+	margin: 0 auto;
+	width: 50%;
+}
+
+
+.about-center p {
+	margin: 0 auto;
+	margin-top: 0px;
+	color: #444444;
+	text-align: justify;
+	
+}
+
+
+.cardOcarmento .card i {
+	margin-right: 5px;
+
+}
+
+.cardOcarmento .card a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	width: 200px;
+	padding: 10px;
+	border-top: 1px solid #e2e2e2;
+	text-align: center;
+	margin: 60 auto;
+	transition: 0.3s all ease-out;
+
+}
+
+/*botao para contato*/
+.contato-center {
+	height: 35px;
+	width: 50px;
+    border: none;
+	background-color: white;
+	background-color:none;
+
+}
+
+.botao-contao {
+	text-align: center;
+	margin-top: 70px;
+}
+
+/* From uiverse.io */
+
+.contato-center {
+	width: 220px;
+	text-align: center padding: 1.3em 3em;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+	background-color: #fff;
+	border: none;
+	border-radius: 45px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+
+}
+.contato-center a{
+	display: block;
+	text-decoration: none;
+	color: var(--yellow);
+	
+}
+.contato-center a:hover{
+	color: #fff;
+}
+.contato-center:hover {
+	background-color: var(--black);
+	box-shadow: 0px 15px 20px var(--yellow);
+	transform: translateY(-7px);
+}
+
+.contato-center:active {
+	transform: translateY(-1px);
+}
+
+
+
+
+.cardOcarmento .card a:hover {
+
+	box-shadow: 0px 0px 5px 0px rgba(245, 213, 39, 0.5);
+
+}
+
+
+/*3 section*/
+.tab {
+	overflow: hidden;
+
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 12px 16px;
+	transition: 0.3s;
+	font-weight: 600;
+
+
+}
+
+.group-button {
+
+	width: 240px;
+	margin: 0 auto;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: black;
+	color: aliceblue;
+	border-radius: 5px;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 40px 12px;
+	text-align: center;
+
+}
+
+.tabcontent i {
+	font-size: 25px;
+
+}
+
+.tabcontent p {
+	margin: 0 auto;
+	font-weight: 600;
+	text-align: justify;
+	padding-bottom: 30px;
+
+}
+
+
+
+#section-empresa {
+	background-color: white;
+
+}
+
+.img-mvv {
+	background-image: url(../img/Industria.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+	box-shadow: 0px 0px 20px 0px #e2e2e2;
+	height: 420px;
+
+}
+
+div#mvv {
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+.translucido {
+	margin: 0px auto 20px;
+	width: 100%;
+	padding: 80px;
+	height: 100%;
+	background: rgba(252, 172, 44, 0.7);
+}
+
+
+
+
+
+
+/*3 sessao*/
+
+#section-setores {
+	padding: 110px 0px 0px;
+
+}
+
+.about-setores {
+
+	animation: moveToleft 0.7s 1s forwards;
+	max-width: 1300px;
+	margin: 0 auto;
+
+}
+
+.group-card{
+	margin: 0 auto;
+
+
+
+ 
+}
+.setores-container {
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px auto;
+	width: 100%;
+  border: 1px solid;
+}
+
+.setores-container .card {
+	width: 280px;
+	height: 200px;
+	margin: 40px;
+	box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.3);
+	border-radius: 2px;
+	background: rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+	justify-items: center;
+	opacity: 0;
+	animation: moveToleft 0.7s 1s forwards;
+	padding: 0px;
+	cursor: pointer;
+
+}
+
+.content .translucido {
+	margin: 0px auto 0px;
+	background: rgb(252, 172, 44);
+
+
+}
+
+
+
+.content .setor1 {
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+	transition: 0.2s all ease-out;
+}
+
+
+.content .setor1:hover {
+
+	opacity: 0.2;
+	transform: scale(1; )
+}
+
+
+
+.card .translucido p {
+
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 10px;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+
+
+}
+
+.setores-section-title {
+	width: 100%;
+	text-align: center;
+
+	justify-content: center;
+	padding-bottom: 1%;
+	text-transform: uppercase;
+	
+}
+
+.setores-section-title h2 {
+	color: black;
+	display: block;
+	color: black;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+/*area localizacao*/
+#section-localizacao {
+	background: rgb(252, 172, 44);
+   back
+	background-image: url(../img/localizacao1.png);
+	background-repeat: no-repeat;
+	justify-content: center;
+	padding: 50px;
+	
+ 
+}
+
+/* From uiverse.io by @adamgiebl */
+.informacao a{
+	text-decoration: none;
+}
+.informacao button {
+ font-family: inherit;
+ font-size: 15px;
+background-color: #05131a;
+ color: white;
+ padding: 0.4em 1em;
+ padding-left: 0.9em;
+ display: flex;
+ align-items: center;
+ border: none;
+ border-radius: 16px;
+ overflow: hidden;
+ transition: all 0.2s;
+margin: 0 auto;
+}
+
+button span {
+ display: block;
+ margin-left: 0.3em;
+ transition: all 0.3s ease-in-out;
+}
+
+button svg {
+ display: block;
+ transform-origin: center center;
+ transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+ animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+ transform: translateX(5em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+ transform: translateX(11em);
+}
+
+button:active {
+ transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+ from {
+  transform: translateY(0.1em);
+ }
+
+ to {
+  transform: translateY(-0.1em);
+ }
+}
+
+
+.localizacao-section-title {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+
+}
+
+.localizacao-section-title h2 {
+color: black;
+	display: block;
+	color: black;
+	font-size: 25px;
+	font-weight: 700;
+
+}
+
+.texto-central {
+
+	margin: 0 auto;
+}
+
+.texto-central p {
+	margin: 0 auto;
+	font-weight: 500;
+	text-align: center;
+	padding-bottom: 30px;
+	font-size:17px;
+	
+
+}
+
+.informacao .botao-what {
+	margin: 0 auto;
+
+	margin-top: 30px;
+	border-radius: 20px;
+	text-align: center;
+	
+}
+
+
+.email {
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	margin: 20 auto -10;
+	border-top: 1px solid #e2e2e2;
+}
+
+.email a {
+	color: black;
+}
+
+.telefone {
+	text-align: center;
+	text-decoration: none;
+}
+
+.telefone a {
+	color: black;
+	pointer-events: none;
+}
+
+
+
+.contato-container {
+	width: 100%;
+	flex-wrap: wrap;
+	padding-left: 6%;
+
+}
+
+#section-cliente-fornecedor {
+	padding: 100px 0px;
+
+}
+
+.about-cliente-fornecedor{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+#clientes {
+	margin: 0px auto 0px;
+
+
+}
+
+.cliente-section-title h2 {
+	text-align: center;
+	color: #696969;
+	margin-bottom: 3%;
+	text-transform: uppercase;
+	font-size: 25px;
+	color: black;
+	display: block;
+	color: black;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+
+
+
+
+.about-carousel {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	cursor: pointer;
+
+}
+
+#about-carousel-cliente {
+	width: 55%;
+	margin: 0 auto;
+	margin-bottom: 100px
+}
+
+.owl-carousel img {
+	border-radius: 5px;
+
+
+}
+
+.owl-carousel .item {
+	margin: 0 auto;
+
+
+}
+
+/*area contao*/
+#section-contato {
+	background: rgba(252, 172, 44, 1);
+	padding: 50px 0px 0px 0px;
+}
+
+.about-contato{
+   
+	max-width: 1300px;
+	margin:0 auto;
+}
+.contato-container {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+
+
+}
+
+.contato-left {
+	display: grid;
+
+}
+
+.contato-left img {
+
+	filter: drop-shadow(0px 0px 300px);
+	color: black;
+
+
+
+}
+
+.vendas {
+	grid-area: right;
+	padding: 0px 20px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+
+}
+
+.financeiro {
+	grid-area: right;
+	padding: 0px 20px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+
+}
+
+/*separador de div*/
+.spr {
+	border-bottom: 1px solid white;
+	margin-top: 15px;
+	margin-bottom: 10px;
+
+}
+
+.vendas p {
+	font-size: 14px;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.financeiro p {
+	font-size: 14px;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+#title-cotanto p {
+	font-size: 20px;
+}
+
+.group-resumo {
+	width: 280px;
+	grid-area: right;
+	padding: 0px 20px;
+	margin: 0 auto;
+	padding-bottom: 80px;
+
+}
+
+.contato-email {
+	grid-area: right;
+	padding: 0px 20px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+
+
+}
+
+.contato-email p {
+	font-size: 14px;
+	margin-bottom: 5px;
+	font-weight: 500;
+
+}
+
+.contato-maps {
+	width: 300px;
+	grid-area: right;
+	padding-right: 50px;
+	margin: 0 auto;
+	height: 210px;
+
+}
+
+.resumo p {
+	text-align: justify;
+}
+
+.group-resumo .maps {
+	margin-top: 20px;
+}
+
+.group-resumo .maps a {
+
+	text-align: center;
+	padding: 7px 100px;
+	border-radius: 100px;
+	margin-top: 50px;
+	text-decoration: none;
+	color: white;
+	background-color: #05131a;
+	transition: all 0.2s ease-out;
+	font-weight: 600;
+}
+
+.group-resumo .maps a:hover {
+	background-color: white;
+	color: black;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 10px;
+	padding: 5px;
+	background: rgba(270, 179, 50, 1);
+
+}
+
+.footer p {
+	margin-bottom: 1px;
+	font-size: 12px;
+	font-weight: 500;
+}
